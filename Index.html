@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Budget App</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+
+<body>
+    <h1 class="text-center">BUDGET APP</h1>
+    <hr class="container fs-5">
+    <div class="wrapper">
+        <div class="container">
+            <div class="sub-conatiner d-flex align-content-center justify-content-evenly">
+                <div class="total-amount-container">
+                    <p>Please Enter your Budget</p>
+                    <input type="number" id="total-amount">
+                    <button class="submit" id="total-amount-button">ENTER</button>
+                </div>
+                <div class="user-amount-container">
+                    <p>Plaese Enter your Expense</p>
+                    <input type="text" class="product-title" id="product-title">
+                    <p>Please Enter your Expense Amount</p>
+                    <input type="number" id="user-amount">
+                    <button class="submit" id="check-button">ADD EXPENSE</button>
+                </div>
+            </div>
+            <div class="output-container d-flex align-content-center justify-content-between">
+                <div>
+                    <p>BUDGET</p>
+                    <div class="text-center">
+                        <img src="https://e7.pngegg.com/pngimages/203/181/png-clipart-computer-icons-budget-finance-payment-bank-text-logo.png" alt="" style="height:40px;width: 40px;border-radius: 50%;"> 
+                    </div>
+                    <span id="amount" class="text-center p-1">0</span>
+                </div>
+                <div>
+                    <p>EXPENSES</p>
+                    <div class="text-center">
+                        <img src="https://png.pngtree.com/png-vector/20230428/ourmid/pngtree-budget-line-icon-vector-png-image_6738514.png" alt="" style="height:40px;width: 40px;border-radius: 50%;">
+                    </div>
+                    <span id="expenditure-value" class="text-center p-1">0</span>
+                </div>
+                <div>
+                    <p>BALANCE</p>
+                    <div class="text-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1580/1580920.png" alt="" style="height:40px;width: 40px;border-radius: 50%;">
+                    </div>
+                    <span id="balance-amount" class="text-center p-1">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Expense Title</td>
+                        <td>Expense Value</td>
+                        <td>Action</td>
+                    </tr>
+                </thead>
+                <tbody class="list-container" id="list">
+                    
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+  
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
